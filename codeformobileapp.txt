@@ -1,0 +1,23 @@
+#what do you wish to input
+input1 = input("project title:")
+
+# next we take the project information
+input2 = input("project details:")
+
+# NOW WE DEFINE THE FILE TO SAVE OUTPUT INTO
+# WE USE THE "a" OPTION TO APPEND TO THE FILE
+# OTHERWISE EACH INPUT WOULD OVERWRITE THE
+# PREVIOUS INPUT
+
+file = open("project.txt", "a")
+
+# WE USE A NUMBER OF file.write STATEMENTS TO WRITE THE OUTPUT IN A FORMAT
+# SUCH THAT THE SOFTWARE TITLE AND LICENSE IS SEPARATED BY A :
+# AND EACH TITLE/LICENSE IS SEPARATED BY A ---
+
+file.write(input1)
+file.write(":")
+file.write(input2 + "\n")
+file.write("---" + "\n")
+file.close()
+print("http://zuri.team")        
