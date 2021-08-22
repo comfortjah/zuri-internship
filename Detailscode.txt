@@ -1,0 +1,6 @@
+def personal_details():
+    name, age = "Comfort", 25
+    address = "Tunfure, Gombe, Nigeria"
+    print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))
+
+personal_details()
